@@ -3,9 +3,11 @@ function App() {
     <div>
       <div>
         <h1>My Todos</h1>
-        <div>
+        <div className="card">
           <h2>TITLE</h2>
-          <button>Delete</button>
+          <div className="actions">
+            <button className="btn">Delete</button>
+          </div>
         </div>
       </div>
     </div>
