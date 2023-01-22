@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import AllMeetups from "./pages/AllMeetups";
 import NewMeetup from "./pages/NewMeetup";
 import Favourites from "./pages/Favourites";
-import { useNavigate } from "react";
 import Layout from "./components/layout/Layout";
 
 function App() {
