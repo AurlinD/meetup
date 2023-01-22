@@ -3,14 +3,18 @@ import AllMeetups from "./pages/AllMeetups";
 import NewMeetup from "./pages/NewMeetup";
 import Favourites from "./pages/Favourites";
 import { useNavigate } from "react";
+import MainNavigation from "./components/layout/MainNavigation";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<AllMeetups />} />
-      <Route path="/new-meetup" element={<NewMeetup />} />
-      <Route path="/favourites" element={<Favourites />} />
-    </Routes>
+    <div>
+      <MainNavigation />
+      <Routes>
+        <Route path="/" element={<AllMeetups />} />
+        <Route path="/new-meetup" element={<NewMeetup />} />
+        <Route path="/favourites" element={<Favourites />} />
+      </Routes>
+    </div>
   );
 }
 
